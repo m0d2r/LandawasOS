@@ -4,6 +4,8 @@ sleep(1)
 term.clear()
 term.setCursorPos(1,1)
 disk.setLabel("disk", "Landawas Operating System")
+shell.run("delete startup.lua")
+local sucess shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/start.lua startup.lua")
 
 -- OS info
 term.setTextColour(colors.lime)
@@ -13,7 +15,7 @@ print(" m0d3r")
 
 --boot info
 term.write("Loading system:")
-textutils.slowPrint("...")
+textutils.slowPrint("....")
 
 print("")
 print("Warning: Beta versions may be unstable and buggy")
