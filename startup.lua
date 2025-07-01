@@ -7,5 +7,3 @@ local sucess shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/
 if sucess then
     print("Start.lua has been updated")
     shell.run("start.lua")
-else
-    print("Failed to update start.lua")
