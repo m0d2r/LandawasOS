@@ -4,7 +4,7 @@ disk.setLabel("disk", "Landawas Operating System")
 
 -- OS info
 term.setTextColour(colors.lime)
-term.write("LandawasOS V0.02")
+term.write("LandawasOS V0.02.2")
 term.setTextColour(colors.white)
 print(" m0d3r")
 
