@@ -4,8 +4,13 @@ sleep(1)
 term.clear()
 term.setCursorPos(1,1)
 disk.setLabel("disk", "Landawas Operating System")
+
 shell.run("delete startup.lua")
-local sucess shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/start.lua startup.lua")
+term.clear()
+term.setCursorPos(1,1)
+local sucess =  shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/start.lua startup.lua")
+term.clear()
+term.setCursorPos(1,1)
 
 -- OS info
 term.setTextColour(colors.lime)
