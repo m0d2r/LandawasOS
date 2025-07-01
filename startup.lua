@@ -1,22 +1,3 @@
-term.clear()
-term.setCursorPos(1,1)
-disk.setLabel("disk", "Landawas Operating System")
-
--- OS info
-print("System ")
-
--- booting
-print("")
-textutils.slowPrint("starting system...")
-
-term.clear()
-term.setCursorPos(1,1)
-
--- OS info
-term.setTextColour(colors.lime)
-term.write("LandawasOS")
-term.setTextColour(colors.white)
-print(" m0d3r")
-
-print("")
-print("Warning: Beta versions may be unstable and buggy")
+shell.run("delete AutoUpd.lua")
+shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/startup.lua AutoUpd.lua")¨
+shell.run("AutoUpd.lua")
