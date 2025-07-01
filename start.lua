@@ -3,20 +3,14 @@ term.setCursorPos(1,1)
 disk.setLabel("disk", "Landawas Operating System")
 
 -- OS info
-print("System ")
-
--- booting
-print("")
-textutils.slowPrint("starting system...")
-
-term.clear()
-term.setCursorPos(1,1)
-
--- OS info
 term.setTextColour(colors.lime)
-term.write("LandawasOS")
+term.write("LandawasOS V0.02")
 term.setTextColour(colors.white)
 print(" m0d3r")
+
+--boot info
+term.write("Loading system:")
+textutils.slowPrint("...")
 
 print("")
 print("Warning: Beta versions may be unstable and buggy")
