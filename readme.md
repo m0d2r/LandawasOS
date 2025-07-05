@@ -9,7 +9,7 @@ Features:
 # How to install
 1. Run lua in the terminal
 2. them run this
-`shell.run("delete startup.lua") shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/startup.lua startup.lua") shell.run("startup.lua")`
+`shell.run("dekete update.lua") shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/update.lua update.lua") shell.run("update.lua")`
 3. done
 
 This will install LandawasOS and reboot the computer
