@@ -3,6 +3,8 @@ LandawasOS is an operating system for cc: tweaked
 
 Features:
 1. AutoUpdate
+2. randomtips
+3. Program list
 
 # How to install
 1. Run lua in the terminal
