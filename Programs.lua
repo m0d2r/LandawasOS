@@ -1,1 +1,2 @@
-print(1. programs)
+print("Programs (1)")
+print("programs")
