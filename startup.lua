@@ -1,13 +1,29 @@
-print("Checking for updates..")
-print("Installing Updates...")
+term.clear()
+term.setCursorPos(1,1)
+
+print("Deleting old files...")
 
 shell.run("delete start.lua")
 shell.run("delete startup.lua")
 
-shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/start.lua start.lua")
-shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/start.lua startup.lua")
+term.clear()
+term.setCursorPos(1,1)
+print("Start.lua has been deůeted")
+print("Startup.lua has been deleted")
+sleep(0,3)
 
-print("Start.lua has been updated")
-print("Startup.lua has been updated")
+term.clear()
+term.setCursorPos(1,1)
+print("downloading new files...")
+
+shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/start.lua start.lua")
+shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/startup.lua startup.lua")
+
+term.clear()
+term.setCursorPos(1,1)
+sleep(0,3)
+print("Start.lua has been downloaded")
+print("Startup.lua has been downloaded")
+
 sleep(1)
 shell.run("start.lua")
