@@ -1,2 +1,2 @@
-print("Programs (1)")
-print("programs")
+print("List of installed programs (1)")
+print("programs.lua")
