@@ -1,6 +1,5 @@
 term.clear()
 term.setCursorPos(1,1)
-disk.setLabel("disk", "Landawas Operating System")
 
 --boot info
 term.write("Loading system ")
@@ -14,6 +13,9 @@ sleep(3)
 term.clear()
 term.setCursorPos(1,1)
 term.setTextColour(colors.lime)
-term.write("LandawasOS V0.05.1")
+term.write("LandawasOS V0.05.1.1")
 term.setTextColour(colors.white)
-print(" by: m0d3r")
+print(" by: m0d3r")¨
+
+-- Label
+os.setComputerLabel("LandawasOS")
