@@ -14,7 +14,6 @@ print("Downloading new files...")
 shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/start.lua start.lua")
 shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/startup.lua startup.lua")
 shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs.lua Programs.lua")
-
 print("Old files has been deleted successfully.")
 
 print("Start.lua has been downloaded")
@@ -23,7 +22,7 @@ print("Programs.lua has been downloaded")
 
 print("All programs and system modules has been downloaded")
 
+-- startup
 print("Starting start script...")
-
 sleep(1)
 shell.run("start.lua")
