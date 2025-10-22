@@ -19,7 +19,7 @@ if ans == "y" then
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/start.lua start.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/startup.lua startup.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs.lua programs.lua")
-    shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs.lua cleaner.lua")
+    shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/cleaner.lua cleaner.lua")
 
     print("Starting start script...")
     shell.run("startup.lua")

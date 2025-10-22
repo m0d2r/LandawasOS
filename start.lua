@@ -1,7 +1,11 @@
 term.clear()
 term.setCursorPos(1,1)
 
---boot info
+-- install update
+shell.run("dekete update.lua")
+shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/update.lua update.lua")
+
+-- boot info
 term.write("Loading system ")
 textutils.slowPrint("......")
 
@@ -14,7 +18,7 @@ sleep(2)
 term.clear()
 term.setCursorPos(1,1)
 term.setTextColour(colors.lime)
-term.write("LandawasOS V0.05.1.3 BETA")
+term.write("LandawasOS V0.05.1.3.1")
 term.setTextColour(colors.white)
 print(" by: m0d3r")
 
