@@ -24,5 +24,5 @@ if ans == "y" then
     print("Starting start script...")
     shell.run("startup.lua")
 else
-    return
+    print("Update canceled!")
 end
