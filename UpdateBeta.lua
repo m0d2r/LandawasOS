@@ -5,10 +5,11 @@ term.setCursorPos(1,1)
 print("Manual update V0.0")
 
 local ans
-print("input your name:")
+print("Do you want to update Y/N: ")
 ans = read()
 if ans == "y" then
     print("Updating system...")
+
     -- Files delete
     shell.run("delete start.lua")
     shell.run("delete startup.lua")
@@ -22,6 +23,6 @@ if ans == "y" then
 
     print("Starting start script...")
     shell.run("startup.lua")
-else;
-    exit()
+else
+    return
 end
