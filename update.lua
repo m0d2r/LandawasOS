@@ -9,6 +9,7 @@ print("Deleting old files...")
 shell.run("delete start.lua")
 shell.run("delete startup.lua")
 shell.run("delete Programs.lua")
+shell.run("delete UpdateBeta.lua")
 
 print("Downloading new files...")
 shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/start.lua start.lua")
