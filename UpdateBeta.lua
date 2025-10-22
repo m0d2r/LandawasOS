@@ -22,6 +22,6 @@ if ans == "y" then
 
     print("Starting start script...")
     shell.run("startup.lua")
-else:
+else;
     exit()
 end
