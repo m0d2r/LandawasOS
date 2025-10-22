@@ -2,4 +2,4 @@ term.clear()
 term.setCursorPos(1,1)
 
 print("List of installed programs (1)")
-print("programs.lua \n cleaner.lua \m update.lua")
+print("programs.lua\ncleaner.lua\nupdate.lua")
