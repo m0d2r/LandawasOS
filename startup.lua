@@ -2,7 +2,7 @@ term.clear()
 term.setCursorPos(1,1)
 
 -- install update
-shell.run("dekete startup.lua")
+shell.run("delete update.lua")
 shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/update.lua update.lua")
 
 -- boot info
