@@ -22,7 +22,7 @@ if ans == "y" then
 
     print("Reboot?")
     local reboot_re
-    if reboot_re = "y" then
+    if reboot_re == "y" then
         os.reboot()
     else
         print("reboot stopped")
