@@ -20,8 +20,12 @@ if ans == "y" then
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/programs.lua programs.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/cleaner.lua cleaner.lua")
 
-    print("Starting start script...")
-    shell.run("startup.lua")
+    print("Reboot?")
+    local reboot_re
+    if reboot_re = "y" then
+        os.reboot()
+    else
+        print("reboot stopped")
 else
     print("Update canceled!")
 end
