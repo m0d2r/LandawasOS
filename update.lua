@@ -11,7 +11,7 @@ if ans == "y" then
     print("Updating system...")
 
     -- Files delete
-    shell.run("delete start.lua")
+    shell.run("delete cleaner.lua")
     shell.run("delete startup.lua")
     shell.run("delete Programs.lua")
 
@@ -19,13 +19,16 @@ if ans == "y" then
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/startup.lua startup.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/programs.lua programs.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/cleaner.lua cleaner.lua")
+    print("All files is now updated to the letest version")
 
     print("Reboot?")
     local reboot_re
+    reboot_re = read()
     if reboot_re == "y" then
         os.reboot()
     else
         print("reboot stopped")
+    end
 else
     print("Update canceled!")
 end
