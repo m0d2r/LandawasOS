@@ -18,7 +18,7 @@ sleep(2)
 term.clear()
 term.setCursorPos(1,1)
 term.setTextColour(colors.lime)
-term.write("LandawasOS V0.05.1.4")
+term.write("LandawasOS V0.05.1.5")
 term.setTextColour(colors.white)
 print(" by: m0d3r")
 
