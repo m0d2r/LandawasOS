@@ -13,7 +13,7 @@ if ans == "y" then
     -- Files delete
     shell.run("delete cleaner.lua")
     shell.run("delete startup.lua")
-    shell.run("delete Programs.lua")
+    shell.run("delete programs.lua")
 
     -- Files download
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/startup.lua startup.lua")
