@@ -8,9 +8,9 @@ shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/update.l
 -- boot info
 term.write("Loading system ")
 textutils.slowPrint(".......")
+term.clear()
 
 -- info
-print("")
 print("Warning: Beta versions may be unstable and buggy")
 sleep(2)
 
@@ -18,7 +18,7 @@ sleep(2)
 term.clear()
 term.setCursorPos(1,1)
 term.setTextColour(colors.lime)
-term.write("LandawasOS V0.05.1.5")
+term.write("LandawasOS V0.05.2.0.1")
 term.setTextColour(colors.white)
 print(" by: m0d3r")
 
