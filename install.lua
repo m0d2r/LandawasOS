@@ -1,25 +1,12 @@
-term.clear()
-term.setCursorPos(1,1)
-
--- updater
-print("Manual update V0.0.1")
-
-local ans
-print("Do you want to update Y/N: ")
+print("Welcome to LandawasOS easy installation script\nTHIS IS SCRIPT IS EARLY DEVELEPOMENT PLEASE IGNOR BUGS")
+print("Install types: All")
 ans = read()
-if ans == "y" then
-    print("Updating system...")
-
-    -- Files delete
-    shell.run("delete cleaner.lua")
-    shell.run("delete startup.lua")
-    shell.run("delete programs.lua")
-
-    -- Files download
+if ans == "all" then
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/startup.lua startup.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/programs.lua programs.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/cleaner.lua cleaner.lua")
-    print("All files is now updated to the letest version")
+    shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/update.lua update.lua")¨
+    shell.run("delete install.lua")
 
     print("Reboot?")
     local reboot_re
@@ -29,6 +16,4 @@ if ans == "y" then
     else
         print("reboot stopped")
     end
-else
-    print("Update canceled!")
 end
