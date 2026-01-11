@@ -9,7 +9,6 @@ print("Welcome to LandawasOS easy installation script\nTHIS IS SCRIPT IS EARLY D
 shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/startup.lua startup.lua")
 shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs.lua Programs.lua")
 shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/cleaner.lua cleaner.lua")
-shell.run("delete install.lua")
 term.clear()
 
 -- Reboot
