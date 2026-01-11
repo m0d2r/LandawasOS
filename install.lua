@@ -1,7 +1,7 @@
 -- information
 os.setComputerLabel("Landawas Operating system")
 print("installer version: 0.1")
-term.setCursorPos("1,1")
+term.setCursorPos(1,1)
 sleep(3)
 clear()
 print("Welcome to LandawasOS easy installation script\nTHIS IS SCRIPT IS EARLY DEVELEPOMENT PLEASE IGNOR BUGS")
