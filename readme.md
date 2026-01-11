@@ -5,6 +5,7 @@ Features:
 1. cleaner
 2. Update
 3. Program list
+4. easy installer
 
 # How to install
 1. Run lua in the terminal
