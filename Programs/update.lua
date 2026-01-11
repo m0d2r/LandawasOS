@@ -16,12 +16,12 @@ if ans == "y" then
     -- Files delete
     shell.run("delete cleaner.lua")
     shell.run("delete startup.lua")
-    shell.run("delete programs.lua")
+    shell.run("delete Programs.lua")
     print("Old files has been deleted")
 
     -- Files download
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/startup.lua startup.lua")
-    shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/programs.lua programs.lua")
+    shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/Programs.lua Programs.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/cleaner.lua cleaner.lua")
     print("All updates has been installed successfuĺy")
 
