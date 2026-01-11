@@ -17,6 +17,7 @@ if ans == "y" then
     shell.run("delete cleaner.lua")
     shell.run("delete startup.lua")
     shell.run("delete Programs.lua")
+    term.clear()
     print("Old files has been deleted")
 
     -- Files download
