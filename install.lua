@@ -10,7 +10,7 @@ shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/startup.
 shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/programs.lua programs.lua")
 shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/cleaner.lua cleaner.lua")
 shell.run("delete install.lua")
-clear()
+term.clear()
 
 -- Reboot
 print("Reboot?")
