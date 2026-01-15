@@ -5,9 +5,9 @@ term.setCursorPos(1,1)
 local ans
 local reboot_re
 
--- updater
-print("Software update V0.0.1")
-print("Do you want to update Y/N: ")
+-- Update all
+print("Software updater V0.0.2")
+print("Do you want to update to the latest version Y/N: ")
 
 ans = read()
 if ans == "y" then
