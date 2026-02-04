@@ -8,12 +8,15 @@ Features:
 4. easy installer - Installs the system
 
 # How to install
-1. Run "luaL" in the terminal
-2. them run this:
+1. Run this in the terminal
+```LUA
+lua
+```
+3. them run this:
 
+```LUA
 shell.run("delete install.lua"); shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/install.lua install.lua"); shell.run("install.lua")
-
+```
 3. done
 
 This will install LandawasOS to the computer
-
