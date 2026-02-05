@@ -9,10 +9,11 @@ print("Welcome to LandawasOS easy installation script\nTHIS IS SCRIPT IS EARLY D
 shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/startup.lua startup.lua")
 shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/Programs.lua Programs.lua")
 shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/cleaner.lua cleaner.lua")
+shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/update.lua update.lua")
 term.clear()
 
 -- Reboot
-print("Reboot?")
+print("Restartt Y/N:")
 local reboot_re
 reboot_re = read()
 if reboot_re == "y" then

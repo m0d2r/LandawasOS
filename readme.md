@@ -7,7 +7,7 @@ Features:
 3. Program list - Shows Installed programs (system-only for now)
 4. easy installer - Installs the system
 
-# How to install
+# Instalation Guide
 1. Run this in the terminal
 ```LUA
 lua
@@ -19,4 +19,15 @@ shell.run("delete install.lua"); shell.run("wget https://raw.githubusercontent.c
 ```
 3. done
 
-This will install LandawasOS to the computer
+This will install LandaWasOS to the computer
+
+# Manual install
+1. download the zip file
+2. Open your game folder
+3. Open your saves folder
+4. Open your ComputerCraft folder
+5. Open your Computer ID folder
+if you not sure what id is it type ID in your computer
+6. Exit world
+7. Copy the zipfile to the computer
+8. Load your world
