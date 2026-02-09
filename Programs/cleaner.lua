@@ -1,5 +1,6 @@
 term.clear()
 term.setCursorPos(1,1)
+print("Cleaner version 0.3")
 
 -- cůear
 textutils.slowPrint("---------------------------------------------------")

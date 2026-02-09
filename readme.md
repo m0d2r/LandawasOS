@@ -1,7 +1,7 @@
 # LandawasOS
-LandawasOS is an operating system for cc: tweaked
+LandawasOS is an operating system for cc: tweaked It is recommended to use advanced computer for the best experience
 
-Features:
+Apps:
 1. cleaner - Clear old update files   
 2. Update - Updates the system to latest version
 3. Program list - Shows Installed programs (system-only for now)
