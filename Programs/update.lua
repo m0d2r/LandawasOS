@@ -11,7 +11,7 @@ print("Do you want to update to the latest version Y/N: ")
 
 ans = read()
 if ans == "y" then
-    print("Updating your Software and systen...")
+    print("Updating System apps...")
 
     -- Files delete
     shell.run("delete cleaner.lua")
