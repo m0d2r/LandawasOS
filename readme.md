@@ -31,5 +31,4 @@ if you not sure what id is it type ID in your computer
 6. Exit world
 7. Copy the zipfile to the computer
 8. extract it
-
 9. Load your world
