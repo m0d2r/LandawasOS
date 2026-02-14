@@ -25,7 +25,7 @@ end
 
 -- Beta install
 if Type_install == "b" then
-    tern.clear()
+    term.clear()
 
     print("Warning: This programs are for testing")
     sleep(2)
