@@ -35,6 +35,7 @@ if type_install == "r" then
     else
         print("Restart Canceled.")
     end
+end
 
 if type_install == "b" then
     print("Updating System apps...")
@@ -51,7 +52,6 @@ if type_install == "b" then
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/gui.lua gui.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/uninstall.lua uninstall.lua")
     print("All Beta Updates has been installed successfuĺy")
-
 
      -- Reboot
      print("Restartt Y/N:")
