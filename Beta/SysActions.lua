@@ -1,10 +1,15 @@
 -- Variables
-local Type_install
+local type_install
 local choice
 local reboot
 
+-- Startup
+term.clear()
+term.setCursorPos(1,1)
+print("System Actions V0.0.1")
+
 -- Ask
-print("1 = uninstall os\n2 = Beta OS uninstall\n3 = OS clear")
+print("1 = uninstall os\n2 = OS clear")
 choice = read()
 
 -- Uninstall
@@ -18,12 +23,11 @@ if choice == "1" then
     shell.run("delete startup.lua")
     print("Uninstalling: update.lua")
     shell.run("delete update.lua")
-
     print("Do you wanna uninstall Beta apps")
-    Type_install = read()
+    type_install = read()
 
     -- beta uninstall
-    if Type_install == "y" then
+    if type_install == "y" then
         print("Uninstalling beta packeges...")
         print("Uninstalling: gui.lua")
         shell.run("delete gui.lua")
@@ -33,10 +37,33 @@ if choice == "1" then
         shell.run("delete BetaPrograms.lua")
         print("Uninstalling: uninstall.lua")
         shell.run("delete uninstall.lua")
+    end
 
     print("Uninstalling: uninstall.lua")
     shell.run("delete uninstall.lua")
 
+    if choice == "2" then
+        textutils.slowPrint("---------------------------------------------------")
+
+        -- Release clear
+        print("Clearning Unused files from updates")
+        shell.run("delete UpdateBeta.lua")
+        shell.run("delete start.lua")
+        shell.run("delete AutoUpd.lua")
+        shell.run("delete install.lua")
+
+        -- Beta clear
+        type_install = read("Do you want to clear beta files? Y/N: ")
+
+        if type_install == "y" then
+            shell.run("delete startupBeta.lua")
+        else
+            print("Beta files are not clearned!")
+        end
+
+        print("System has been clearned.")
+        textutils.slowPrint("---------------------------------------------------")
+    end
 else
     print("Uninstallation canceled!")
 
