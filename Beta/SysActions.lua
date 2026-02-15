@@ -23,7 +23,7 @@ if choice == "1" then
     shell.run("delete startup.lua")
     print("Uninstalling: update.lua")
     shell.run("delete update.lua")
-    print("Do you wanna uninstall Beta apps")
+    print("Do you wanna uninstall Beta apps: Y/N")
     type_install = read()
 
     -- beta uninstall
