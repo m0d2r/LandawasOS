@@ -23,6 +23,8 @@ if choice == "1" then
     shell.run("delete startup.lua")
     print("Uninstalling: update.lua")
     shell.run("delete update.lua")
+    print("Uninstalling: install.lua")
+    shell.run("delete install.lua")
     print("Do you wanna uninstall Beta apps: Y/N")
     type_install = read()
 
@@ -33,6 +35,9 @@ if choice == "1" then
         shell.run("delete gui.lua")
         print("Uninstalling: uninstall.lua")
         shell.run("delete uninstall.lua")
+        print("Uninstalling: SysActions.lua")
+        shell.run("delete SysActions.lua")
+        print("All Beta packeges has been uninstalled succesfuly")
     end
 
     print("Uninstalling: uninstall.lua")
