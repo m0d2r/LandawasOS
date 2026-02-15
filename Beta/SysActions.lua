@@ -31,10 +31,6 @@ if choice == "1" then
         print("Uninstalling beta packeges...")
         print("Uninstalling: gui.lua")
         shell.run("delete gui.lua")
-        print("Uninstalling: startupBeta.lua")
-        shell.run("delete startupBeta.lua")
-        print("Uninstalling: BetaPrograms.lua")
-        shell.run("delete BetaPrograms.lua")
         print("Uninstalling: uninstall.lua")
         shell.run("delete uninstall.lua")
     end
