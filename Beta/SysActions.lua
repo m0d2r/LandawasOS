@@ -57,6 +57,8 @@ if choice == "1" then
 
         if type_install == "y" then
             shell.run("delete startupBeta.lua")
+            shell.run("delete uninstall.lua")
+            shell.run("delete startupBeta.lua")
         else
             print("Beta files are not clearned!")
         end

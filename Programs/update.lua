@@ -8,7 +8,7 @@ local type_install
 
 -- Update all
 print("Software updater V0.0.3")
-print("Do you want to update to the latest release:\nAvaible R/B")
+print("Do you want to update to the latest release:\nAvailable r/b")
 
 type_install = read()
 if type_install == "r" then
@@ -25,7 +25,7 @@ if type_install == "r" then
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/startup.lua startup.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/programs.lua programs.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/cleaner.lua cleaner.lua")
-    print("All updates has been installed successfuĺy")
+    print("All updates has been installed succesfuĺy")
 
     -- Reboot
     print("Restartt Y/N:")
@@ -51,16 +51,16 @@ if type_install == "b" then
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/startup.lua startup.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/gui.lua gui.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/uninstall.lua uninstall.lua")
-    print("All Beta Updates has been installed successfuĺy")
+    print("All Beta Updates has been installed Sucesfuly")
 
-     -- Reboot
-     print("Restartt Y/N:")
-     reboot_re = read()
-     if reboot_re == "y" then
-         os.reboot()
-     else
-         print("Restart Canceled.")
-     end
+    -- Reboot
+    print("Restartt Y/N:")
+    reboot_re = read()
+    if reboot_re == "y" then
+        os.reboot()
+    else
+        print("Restart Canceled.")
+    end
 else
     print("Update canceled!")
 end
