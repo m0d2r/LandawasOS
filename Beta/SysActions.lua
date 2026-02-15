@@ -68,7 +68,7 @@ if choice == "1" then
     end
 else
     print("Uninstallation canceled!")
-
+end
 print("LandaWasOS is uninstalled please restart the computer. Y/N")
 reboot = read()
 
