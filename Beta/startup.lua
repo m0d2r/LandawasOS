@@ -16,7 +16,7 @@ term.setCursorPos(1,1)
 term.clear()
 term.setCursorPos(1,1)
 term.setTextColour(colors.lime)
-term.write("LandawasOS V0.7 beta")
+term.write("LandawasOS V0.7 beta 2")
 
 -- MOTD
 if settings.get("motd.enable") then

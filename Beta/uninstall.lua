@@ -4,11 +4,12 @@ local choice
 local reboot
 
 -- Ask
-print("Uninstall LandaWasOS. Y/N")
+print("1 = uninstall os\n2 = Beta OS uninstall\n3 = OS clear")
 choice = read()
 
 -- Uninstall
-if choice == "y" then
+if choice == "1" then
+    print("Uninstalling packeges...")
     print("Uninstalling: clearner.lua")
     shell.run("delete clearner.lua")
     print("Uninstalling: programs.lua")
@@ -24,9 +25,13 @@ if choice == "y" then
     -- beta uninstall
     if Type_install == "y" then
         print("Uninstalling beta packeges...")
+        print("Uninstalling: gui.lua")
         shell.run("delete gui.lua")
+        print("Uninstalling: startupBeta.lua")
         shell.run("delete startupBeta.lua")
+        print("Uninstalling: BetaPrograms.lua")
         shell.run("delete BetaPrograms.lua")
+        print("Uninstalling: uninstall.lua")
         shell.run("delete uninstall.lua")
 
     print("Uninstalling: uninstall.lua")

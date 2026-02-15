@@ -33,7 +33,7 @@ if Type_install == "b" then
     print("Installing all beta packeges...")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/uninstall.lua uninstall.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/gui.lua gui.lua")
-    shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/startup.lua startupBeta.lua")
+    shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/startup.lua startup.lua")
 
 else
     shell.run("start install.lua")

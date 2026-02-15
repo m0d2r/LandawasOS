@@ -4,13 +4,14 @@ term.setCursorPos(1,1)
 -- vars
 local ans
 local reboot_re
+local type_install
 
 -- Update all
 print("Software updater V0.0.3")
-print("Do you want to update to the latest version Y/N: ")
+print("Do you want to update to the latest release:\nAvaible R/B")
 
-ans = read()
-if ans == "y" then
+type_install = read()
+if type_install == "r" then
     print("Updating System apps...")
 
     -- Files delete
