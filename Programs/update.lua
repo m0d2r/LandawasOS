@@ -41,9 +41,9 @@ if type_install == "b" then
     print("Updating System apps...")
 
     -- Files delete
-    shell.run("delete cleaner.lua")
+    shell.run("delete gui.lua")
     shell.run("delete startup.lua")
-    shell.run("delete programs.lua")
+    shell.run("delete SysActions.lua")
     term.clear()
     print("Old files has been deleted")
 
