@@ -15,7 +15,8 @@ shell.run("delete AutoUpd.lua")
 shell.run("delete install.lua")
 
 -- Beta clear
-type_install = read("Do you want to clear beta files? Y/N: ")
+print("Do you want to delete old beta files?: Y/N")
+type_install = read("")
 
 if type_install == "y" then
     shell.run("delete startupBeta.lua")
