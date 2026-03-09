@@ -1,5 +1,6 @@
 # LandawasOS
 LandawasOS is an operating system for cc: tweaked i hope is this OS any good im still working on more updates to make it even better, Please report bugs using issues on github thank you
+
 It is recommended to use advanced computer for the best experience
 
 Apps:
@@ -33,4 +34,5 @@ if you not sure what id is it type ID in your computer
 7. Copy the zipfile to the computer
 8. extract it
 9. Load your world
+
 
