@@ -37,4 +37,6 @@ if you not sure what id is it type ID in your computer
 9. Load your world
 
 # Star history
-<img width="2604" height="3010" alt="star-history-202639" src="https://github.com/user-attachments/assets/ccc8f8fd-a53b-47b3-a66a-118c1e20a599" />
+<img width="2604" height="525
+  2010" alt="star-history-202639" src="https://github.com/user-attachments/assets/ccc8f8fd-a53b-47b3-a66a-118c1e20a599" />
+
