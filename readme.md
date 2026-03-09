@@ -24,7 +24,8 @@ shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/install.
 This will run the installer to install LandaWasOS to the computer
 
 # Manual install
-1. download the zip file
+1. download the zip file<img 
+
 2. Open your game folder
 3. Open your saves folder
 4. Open your ComputerCraft folder
@@ -36,4 +37,4 @@ if you not sure what id is it type ID in your computer
 9. Load your world
 
 # Star history
-<iframe style="width:100%;height:auto;min-width:600px;min-height:400px;" src="https://www.star-history.com/?repos=m0d2r%2FLandawasOS&type=date&legend=bottom-right" frameBorder="0"></iframe>
+<img width="2604" height="3010" alt="star-history-202639" src="https://github.com/user-attachments/assets/ccc8f8fd-a53b-47b3-a66a-118c1e20a599" />
