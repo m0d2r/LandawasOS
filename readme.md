@@ -15,11 +15,11 @@ lua
 3. them run this:
 
 ```LUA
-shell.run("delete install.lua"); shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/install.lua install.lua"); shell.run("install.lua")
+shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/install.lua install.lua"); shell.run("install.lua")
 ```
 3. done
 
-This will install LandaWasOS to the computer
+This will run the installer to install LandaWasOS to the computer
 
 # Manual install
 1. download the zip file
