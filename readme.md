@@ -35,4 +35,5 @@ if you not sure what id is it type ID in your computer
 8. extract it
 9. Load your world
 
-
+# Star history
+<iframe style="width:100%;height:auto;min-width:600px;min-height:400px;" src="https://www.star-history.com/?repos=m0d2r%2FLandawasOS&type=date&legend=bottom-right" frameBorder="0"></iframe>
