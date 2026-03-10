@@ -1,5 +1,7 @@
 # LandawasOS
-LandawasOS is an operating system for cc: tweaked It is recommended to use advanced computer for the best experience
+LandawasOS is an operating system for cc: tweaked i hope is this OS any good im still working on more updates to make it even better, Please report bugs using issues on github thank you
+
+It is recommended to use advanced computer for the best experience
 
 Apps:
 1. cleaner - Clear old update files   
@@ -15,20 +17,26 @@ lua
 3. them run this:
 
 ```LUA
-shell.run("delete install.lua"); shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/install.lua install.lua"); shell.run("install.lua")
+shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/install.lua install.lua"); shell.run("install.lua")
 ```
 3. done
 
-This will install LandaWasOS to the computer
+This will run the installer to install LandaWasOS to the computer
 
 # Manual install
-1. download the zip file
+1. download the zip file<img 
 2. Open your game folder
 3. Open your saves folder
 4. Open your ComputerCraft folder
 5. Open your Computer ID folder
+
 if you not sure what id is it type ID in your computer
+
 6. Exit world
 7. Copy the zipfile to the computer
 8. extract it
 9. Load your world
+
+# Star history
+<img width="2604" height="525
+  2010" alt="star-history-202639" src="https://github.com/user-attachments/assets/ccc8f8fd-a53b-47b3-a66a-118c1e20a599" />

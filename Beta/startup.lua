@@ -6,9 +6,12 @@ print("Updating update.lua")
 shell.run("delete update.lua")
 shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/update.lua update.lua")
 
+term.clear()
+term.setCursorPos(1,1)
+
 -- boot info
 term.write("Loading Software ")
-textutils.slowPrint(".....")
+textutils.slowPrint(".......")
 term.clear()
 term.setCursorPos(1,1)
 
@@ -16,6 +19,6 @@ term.setCursorPos(1,1)
 term.clear()
 term.setCursorPos(1,1)
 term.setTextColour(colors.green)
-term.write("LandawasOS V0.7 Beta 2")
+term.write("LandawasOS V0.7 Beta 3")
 term.setTextColour(colors.white)
 print(" by: m0d3r")

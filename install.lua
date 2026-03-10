@@ -3,7 +3,6 @@ local reboot_re
 local type_install
 
 -- settings
-settings.set("motd.enable", true)
 os.setComputerLabel("Landawas Operating system")
 
 -- information
@@ -33,11 +32,12 @@ if type_install == "b" then
     print("Warning: This programs are for testing")
     sleep(2)
 
+    -- Install beta begin
     print("Installing all beta packeges...")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/SysActions.lua SysActions.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/gui.lua gui.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/startup.lua startup.lua")
-
+    shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/programs.lua programs.lua")
 else
     shell.run("start install.lua")
 end
