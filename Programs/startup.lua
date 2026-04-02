@@ -1,3 +1,4 @@
+-- Beggining
 term.clear()
 term.setCursorPos(1,1)
 
@@ -6,16 +7,58 @@ print("Updating update.lua")
 shell.run("delete update.lua")
 shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/update.lua update.lua")
 
--- boot info
-term.write("Loading Software ")
-textutils.slowPrint("......")
 term.clear()
 term.setCursorPos(1,1)
 
--- system info
+-- Text
+term.write("Starting services")
+textutils.slowPrint("........")
+term.write("Starting System")
+textutils.slowPrint(".......")
+term.write("Starting shell")
+textutils.slowPrint("......")
+
+print("")
+print("boot completed...")
+
+-- clean
+sleep(1)
 term.clear()
 term.setCursorPos(1,1)
-term.setTextColour(colors.green)
-term.write("LandawasOS V0.6.2.5")
-term.setTextColour(colors.white)
-print("by: m0d3r")
+
+-- OS info
+term.setTextColor(colors.green)
+term.write("LandaWasOS V0.7")
+term.setTextColor(colors.orange)
+term.setCursorPos(1,2)
+term.write("By: M0d2r")
+
+-- Information
+term.setCursorPos(1,4)
+term.setTextColor(colors.white)
+print("Type programs for all programs")
+
+-- program loop
+term.setCursorPos(1,6)
+while true do
+
+    -- User
+    term.setTextColor(colors.green)
+    write("LandaWasOS")
+    term.setTextColor(colors.white)
+    write(" > ")
+    
+    local input = read()
+    
+    -- Build in commands
+    if input == "exit" then
+        break
+        
+    elseif input == "reboot" then
+        print("Rebooting...")
+        sleep(1)
+        os.reboot()
+    else
+        shell.run(input)
+    end
+end
