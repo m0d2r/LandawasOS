@@ -33,7 +33,7 @@ term.setCursorPos(1,1)
 
 -- OS info
 term.setTextColor(green)
-term.write("LandaWasOS V0.7")
+term.write("LandaWasOS V0.7 hotfix 1")
 term.setTextColor(orange)
 term.setCursorPos(1,2)
 term.write("By: M0d2r")
@@ -64,11 +64,13 @@ while true do
         print("Rebooting...")
         sleep(1)
         os.reboot()
-    elseif input == "shutdown"
+    
+    elseif input == "shutdown" then
         tern.setTextColor(orange)
         print("Shutting down...")
         sleep(1)
         os.shutdown()
+    
     else
         shell.run(input)
     end
