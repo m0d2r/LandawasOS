@@ -1,3 +1,8 @@
+-- vars
+local orange = colors.orange
+local white = colors.white
+local green = colors.green
+
 -- Beggining
 term.clear()
 term.setCursorPos(1,1)
@@ -27,15 +32,15 @@ term.clear()
 term.setCursorPos(1,1)
 
 -- OS info
-term.setTextColor(colors.green)
-term.write("LandaWasOS V0.7 Beta 3A")
-term.setTextColor(colors.orange)
+term.setTextColor(green)
+term.write("LandaWasOS V0.7 Beta 4A")
+term.setTextColor(orange)
 term.setCursorPos(1,2)
 term.write("By: M0d2r")
 
 -- Information
 term.setCursorPos(1,4)
-term.setTextColor(colors.white)
+term.setTextColor(white)
 print("Type programs for all programs")
 
 -- program loop
@@ -43,9 +48,9 @@ term.setCursorPos(1,6)
 while true do
 
     -- User
-    term.setTextColor(colors.green)
+    term.setTextColor(green)
     write("LandaWasOS")
-    term.setTextColor(colors.white)
+    term.setTextColor(white)
     write(" > ")
     
     local input = read()
@@ -55,9 +60,15 @@ while true do
         break
         
     elseif input == "reboot" then
+        term.setTextColor(orange)
         print("Rebooting...")
         sleep(1)
         os.reboot()
+    elseif input == "shutdown"
+        tern.setTextColor(orange)
+        print("Shutting down...")
+        sleep(1)
+        os.shutdown()
     else
         shell.run(input)
     end
