@@ -3,10 +3,10 @@ local reboot_re
 local type_install
 
 -- settings
-os.setComputerLabel("Landawas Operating system")
+os.setComputerLabel("Landawas Operating System")
 
 -- information
-print("installer version: 0.2")
+print("installer version: 0.2.1")
 term.setCursorPos(1,1)
 sleep(3)
 term.clear()
@@ -20,7 +20,7 @@ if type_install == "r" then
     print("Welcome to LandawasOS easy installation script\nTHIS IS SCRIPT IS EARLY DEVELEPOMENT PLEASE IGNOR BUGS")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/startup.lua startup.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/commands.lua commands.lua")
-    shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/cleaner.lua cleaner.lua")
+    shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/clean.lua clean.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/update.lua update.lua")
     term.clear()
 end 
