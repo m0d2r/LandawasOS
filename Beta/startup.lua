@@ -64,11 +64,13 @@ while true do
         print("Rebooting...")
         sleep(1)
         os.reboot()
-    elseif input == "shutdown"
+    
+    elseif input == "shutdown" then
         tern.setTextColor(orange)
         print("Shutting down...")
         sleep(1)
         os.shutdown()
+    
     else
         shell.run(input)
     end
