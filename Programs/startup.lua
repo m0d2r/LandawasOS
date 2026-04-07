@@ -33,7 +33,7 @@ term.setCursorPos(1,1)
 
 -- OS info
 term.setTextColor(green)
-term.write("LandaWasOS V0.7.2")
+term.write("LandaWasOS V0.7.3")
 term.setTextColor(orange)
 term.setCursorPos(1,2)
 term.write("By: M0d2r")
@@ -60,8 +60,15 @@ while true do
         break
 
     elseif input == "fetch" then
-        print("OS name: LandaWasOS")
-        print("Version: 0.7.2")
+        write("OS: ")
+        term.setTextColor(green)
+        print("LandaWasOS")
+        term.setTextColor(white)
+        write("OS Version: ")
+        term.setTextcolor(green)
+        print("V0.7.3")
+        sleep(1)
+        term.setTextColor(white)
         
     elseif input == "reboot" then
         term.setTextColor(orange)
