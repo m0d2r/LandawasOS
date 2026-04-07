@@ -2,6 +2,7 @@
 local orange = colors.orange
 local white = colors.white
 local green = colors.green
+local version = "V0.7.3 Hotfix 1"
 
 -- Beggining
 term.clear()
@@ -33,7 +34,7 @@ term.setCursorPos(1,1)
 
 -- OS info
 term.setTextColor(green)
-term.write("LandaWasOS V0.7.3")
+term.write(version)
 term.setTextColor(orange)
 term.setCursorPos(1,2)
 term.write("By: M0d2r")
@@ -66,7 +67,7 @@ while true do
         term.setTextColor(white)
         write("OS Version: ")
         term.setTextcolor(green)
-        print("V0.7.3")
+        print(version)
         sleep(1)
         term.setTextColor(white)
         
