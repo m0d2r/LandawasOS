@@ -33,7 +33,7 @@ term.setCursorPos(1,1)
 
 -- OS info
 term.setTextColor(green)
-term.write("LandaWasOS V0.7 hotfix 1")
+term.write("LandaWasOS V0.7.2")
 term.setTextColor(orange)
 term.setCursorPos(1,2)
 term.write("By: M0d2r")
@@ -58,6 +58,10 @@ while true do
     -- Build in commands
     if input == "exit" then
         break
+
+    elseif input == "fetch" then
+        print("OS name: LandaWasOS")
+        print("Version: 0.7.2")
         
     elseif input == "reboot" then
         term.setTextColor(orange)
