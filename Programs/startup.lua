@@ -2,7 +2,7 @@
 local orange = colors.orange
 local white = colors.white
 local green = colors.green
-local version = "V0.7.3 Hotfix 1"
+local version = "V0.7.3 Hotfix 2"
 
 -- Beggining
 term.clear()
@@ -66,7 +66,7 @@ while true do
         print("LandaWasOS")
         term.setTextColor(white)
         write("OS Version: ")
-        term.setTextcolor(green)
+        term.setTextColor(green)
         print(version)
         sleep(1)
         term.setTextColor(white)
