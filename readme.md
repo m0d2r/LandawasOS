@@ -24,18 +24,21 @@ shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/install.
 This will run the installer to install LandaWasOS to the computer
 
 # Manual install
-1. download the zip file<img 
-2. Open your game folder
-3. Open your saves folder
-4. Open your ComputerCraft folder
-5. Open your Computer ID folder
+1. Shut dwon the computer
+2. leave the world
+3. download the zip file
+4. Open your game folder
+5. Open your saves folder
+6. Open your ComputerCraft folder
+7. Open your Computer ID folder
 
 if you not sure what id is it type ID in your computer
 
-6. Exit world
-7. Copy the zipfile to the computer
-8. extract it
-9. Load your world
+8. Exit world
+9. Copy the zipfile to the computer
+10. extract it
+11. Load your world
+12. Start up your computer
 
 # Star history
 <img width="2604" height="525

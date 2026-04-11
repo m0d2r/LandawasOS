@@ -20,9 +20,9 @@ if type_install == "r" then
     print("Updating System apps...")
 
     -- Files delete
-    shell.run("delete cleaner.lua")
+    shell.run("delete clean.lua")
     shell.run("delete startup.lua")
-    shell.run("delete programs.lua")
+    shell.run("delete commands.lua")
     term.clear()
     term.setTextColor(green)
     print("Old files has been deleted")
@@ -33,7 +33,7 @@ if type_install == "r" then
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/commands.lua commands.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/clean.lua clean.lua")
     term.setTextColor(green)
-    print("All updates has been installed succesfuĺy")
+    print("All updates has been installed sucesffuly")
     term.setTextColor(white)
     
     -- Reboot
@@ -66,7 +66,7 @@ if type_install == "b" then
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/gui.lua gui.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/SysActions.lua SysActions.lua")
     term.setTextColor(green)
-    print("All Beta Updates has been installed Sucesfuly")
+    print("All Beta Updates has been installed Sucesffuly")
     term.setTextColor(white)
 
     -- Reboot

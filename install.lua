@@ -1,6 +1,8 @@
 -- variables
 local reboot_re
 local type_install
+local white = colors.white
+local green = colors.green
 
 -- settings
 os.setComputerLabel("Landawas Operating System")
@@ -10,7 +12,7 @@ term.clear()
 term.setCursorPos(1,1)
 
 -- information
-print("installer version: 0.2.1")
+print("installer version: 0.3")
 sleep(3)
 
 print("select install type: r, b")
@@ -21,14 +23,21 @@ term.setCursorPos(1,1)
 
 -- Release install
 if type_install == "r" then
+    
     term.clear()
-    print("Welcome to LandawasOS easy installation script\nTHIS IS SCRIPT IS EARLY DEVELEPOMENT PLEASE IGNOR BUGS")
+    print("Welcome to LandawasOS easy installation script\nTHIS SCRIPT IS EARLY DEVELEPOMENT PLEASE IGNOR BUGS")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/startup.lua startup.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/commands.lua commands.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/clean.lua clean.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/update.lua update.lua")
+    os.setComputerLabel("Landawas Operating System")
     term.clear()
-end 
+    term.setCursorPos(1,1)
+    term.setTextColor(green)
+    Print("LandaWasOS has been installed succesfuly")
+    term.setTextColor(white)
+    sleep(1)
+end
 
 -- Beta install
 if type_install == "b" then
@@ -43,6 +52,12 @@ if type_install == "b" then
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/gui.lua gui.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/startup.lua startup.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/programs.lua programs.lua")
+    os.setComputerLabel("Landawas Operating System (BETA)")
+
+    term.setTextColor(green)
+    Print("LandaWasOS has been installed succesfuly")
+    term.setTextColor(white)
+    sleep(1)
 else
     shell.run("start install.lua")
 end

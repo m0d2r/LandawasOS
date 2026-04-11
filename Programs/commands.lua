@@ -1,7 +1,11 @@
-print("List of installed systen commands (6)")
+term.clear()
+term.setCursorPos(1,1)
+
+print("List of installed systen commands (7)")
 print("Commands - full list of commands")
 print("Clean - Cleans your system for you")
 print("update - updater")
+print("fetch - Shows information about the system")
 print("exit - exits custom shell")
 print("reboot - Reboots your system")
 print("shutdown - Shut your system down")

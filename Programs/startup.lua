@@ -2,7 +2,8 @@
 local orange = colors.orange
 local white = colors.white
 local green = colors.green
-local version = "V0.7.3.1"
+local version = "V0.7.4 Hotfix 1"
+local autor = "By m0d2r"
 
 -- Beggining
 term.clear()
@@ -17,11 +18,13 @@ term.clear()
 term.setCursorPos(1,1)
 
 -- Text
-term.write("Starting services")
+term.write("Starting services ")
 textutils.slowPrint("........")
-term.write("Starting System")
+term.write("Starting System ")
 textutils.slowPrint(".......")
-term.write("Starting shell")
+term.write("Loading system information ")
+textutils.slowPrint("..")
+term.write("Starting shell ")
 textutils.slowPrint("......")
 
 print("")
@@ -37,7 +40,7 @@ term.setTextColor(green)
 term.write(version)
 term.setTextColor(orange)
 term.setCursorPos(1,2)
-term.write("By: M0d2r")
+term.write(autor)
 
 -- Information
 term.setCursorPos(1,4)
@@ -68,8 +71,9 @@ while true do
         write("OS Version: ")
         term.setTextColor(green)
         print(version)
-        sleep(1)
+        print("autor", autor)
         term.setTextColor(white)
+        sleep(1)
         
     elseif input == "reboot" then
         term.setTextColor(orange)

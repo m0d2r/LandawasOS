@@ -2,6 +2,8 @@
 local orange = colors.orange
 local white = colors.white
 local green = colors.green
+local version = "BUILD: 1"
+local autor = "By m0d2r"
 
 -- Beggining
 term.clear()
@@ -22,6 +24,10 @@ term.write("Starting System")
 textutils.slowPrint(".......")
 term.write("Starting shell")
 textutils.slowPrint("......")
+term.write("Loading system information")
+textutils.slowPrint("..")
+term.write("Loading commands")
+textutils.slowPrint("...")
 
 print("")
 print("boot completed...")
@@ -33,10 +39,10 @@ term.setCursorPos(1,1)
 
 -- OS info
 term.setTextColor(green)
-term.write("LandaWasOS V0.7 Beta 4A")
+term.write(version)
 term.setTextColor(orange)
 term.setCursorPos(1,2)
-term.write("By: M0d2r")
+term.write(autor)
 
 -- Information
 term.setCursorPos(1,4)
@@ -45,8 +51,8 @@ print("Type programs for all programs")
 
 -- program loop
 term.setCursorPos(1,6)
-while true do
 
+while true do
     -- User
     term.setTextColor(green)
     write("LandaWasOS")
@@ -58,6 +64,18 @@ while true do
     -- Build in commands
     if input == "exit" then
         break
+
+    elseif input == "fetch" then
+        write("OS: ")
+        term.setTextColor(green)
+        print("LandaWasOS")
+        term.setTextColor(white)
+        write("OS Version: ")
+        term.setTextColor(green)
+        print(version)
+        print("autor", autor)
+        term.setTextColor(white)
+        sleep(1)
         
     elseif input == "reboot" then
         term.setTextColor(orange)
