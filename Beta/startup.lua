@@ -2,7 +2,7 @@
 local orange = colors.orange
 local white = colors.white
 local green = colors.green
-local version = "Build: 2"
+local version = "Build: 3"
 local autor = "By m0d2r"
 
 -- install update
@@ -20,8 +20,8 @@ term.setCursorPos(1,1)
 print("---------------------------------------------------")
 term.setTextColour(colors.lime)
 print("LandaWasOS GUI")
-print("V0.0.3")
-print("by: m0d2r")
+print(version)
+print(autor)
 term.setTextColor(colors.orange)
 term.setCursorPos(1,1)
 print("You can use progrmas to show list of programs")
@@ -44,5 +44,47 @@ textutils.slowPrint("...")
 term.write("Loading GUI")
 textutils.slowPrint(".............")
 
--- Load GUI
-print("GUI is comming soon...")
+-- program loop
+term.setCursorPos(1,6)
+while true do
+
+    -- User
+    term.setTextColor(green)
+    write("LandaWasOS")
+    term.setTextColor(white)
+    write(" > ")
+    
+    local input = read()
+    
+    -- Build in commands
+    if input == "exit" then
+        break
+
+    elseif input == "fetch" then
+        write("OS: ")
+        term.setTextColor(green)
+        print("LandaWasOS")
+        term.setTextColor(white)
+        write("OS Version: ")
+        term.setTextColor(green)
+        print(version)
+        print("autor", autor)
+        term.setTextColor(white)
+        sleep(1)
+        
+    elseif input == "reboot" then
+        term.setTextColor(orange)
+        print("Rebooting...")
+        sleep(1)
+        os.reboot()
+    
+    elseif input == "shutdown" then
+        tern.setTextColor(orange)
+        print("Shutting down...")
+        sleep(1)
+        os.shutdown()
+    
+    else
+        shell.run(input)
+    end
+end

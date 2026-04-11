@@ -46,6 +46,8 @@ elseif choice == "2" then
     shell.run("delete startupBeta.lua")
     shell.run("delete uninstall.lua")
     shell.run("delete startupBeta.lua")
+    shell.run("delete gui.lua")
+    shell.run("delete programs.lua")
 
     print("System has been clearned.")
     textutils.slowPrint("---------------------------------------------------")
