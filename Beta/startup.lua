@@ -4,7 +4,7 @@ local white = colors.white
 local green = colors.green
 local gray = colors.gray
 local lime = colors.lime
-local version = "Build: 5"
+local version = "Build: 6"
 local autor = "By m0d2r"
 local line = "---------------------------------------------------"
 
@@ -55,6 +55,7 @@ textutils.slowPrint("....")
 
 term.setCursorPos(1,9)
 print("You can use progrmas to show list of programs")
+sleep(1)
 
 -- program loop
 term.setCursorPos(1,8)
@@ -74,7 +75,7 @@ while true do
     elseif input == "fetch" then
         write("OS: ")
         term.setTextColor(green)
-        print("LandaWasOS")
+        print("LandaWasOS (BETA)")
         term.setTextColor(white)
         write("OS Version: ")
         term.setTextColor(green)
