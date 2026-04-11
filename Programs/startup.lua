@@ -2,7 +2,7 @@
 local orange = colors.orange
 local white = colors.white
 local green = colors.green
-local version = "V0.7.3 Hotfix 2"
+local version = "V0.7.3.1"
 
 -- Beggining
 term.clear()
