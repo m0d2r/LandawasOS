@@ -7,7 +7,6 @@ local input_name
 -- Startup
 term.clear()
 term.setCursorPos(1,1)
-print("System Actions V0.0.2")
 
 -- Ask
 print("1 = uninstall os\n2 = OS clear\n3. Rename system")
@@ -16,8 +15,8 @@ choice = read()
 -- Uninstall
 if choice == "1" then
     print("Uninstalling packeges...")
-    shell.run("delete clearner.lua")
-    shell.run("delete programs.lua")
+    shell.run("delete clearn.lua")
+    shell.run("delete commands.lua")
     shell.run("delete startup.lua")
     shell.run("delete update.lua")
 
@@ -28,8 +27,8 @@ if choice == "1" then
     -- Beta uninstall
     if type_install == "y" then
         print("Uninstalling beta packeges...")
-        shell.run("delete gui.lua")
-        shell.run("delete uninstall.lua")
+        shell.run("delete startup.lua")
+        shell.run("delete programs.lua")
         shell.run("delete SysActions.lua")
         print("All Beta packeges has been uninstalled succesfuly")
     end
@@ -59,8 +58,8 @@ elseif choice == "3" then
     if input_name == "" then
         os.setComputerLabel(input_name)
     else
-        print("Name cannot be ampty")
+        print("Name cannot be applied, cannot be empty...")
     end
 else
-    print("Invalid operation, select a correct number")
+    print("Invalid operation, select a correct number: ")
 end

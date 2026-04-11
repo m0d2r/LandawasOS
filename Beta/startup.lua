@@ -2,7 +2,7 @@
 local orange = colors.orange
 local white = colors.white
 local green = colors.green
-local version = "Build: 3"
+local version = "Build: 4"
 local autor = "By m0d2r"
 
 -- install update
@@ -23,8 +23,6 @@ print("LandaWasOS GUI")
 print(version)
 print(autor)
 term.setTextColor(colors.orange)
-term.setCursorPos(1,1)
-print("You can use progrmas to show list of programs")
 term.setCursorPos(1,18)
 print("---------------------------------------------------")
 sleep(2)
@@ -43,11 +41,12 @@ term.write("Loading commands")
 textutils.slowPrint("...")
 term.write("Loading GUI")
 textutils.slowPrint(".............")
+term.setCursorPos(1,8)
+print("You can use progrmas to show list of programs")
 
 -- program loop
-term.setCursorPos(1,6)
+term.setCursorPos(1,8)
 while true do
-
     -- User
     term.setTextColor(green)
     write("LandaWasOS")
