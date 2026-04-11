@@ -5,14 +5,19 @@ local type_install
 -- settings
 os.setComputerLabel("Landawas Operating System")
 
+-- Clear
+term.clear()
+term.setCursorPos(1,1)
+
 -- information
 print("installer version: 0.2.1")
-term.setCursorPos(1,1)
 sleep(3)
-term.clear()
 
 print("select install type: r, b")
 type_install = read()
+
+term.clear()
+term.setCursorPos(1,1)
 
 -- Release install
 if type_install == "r" then
