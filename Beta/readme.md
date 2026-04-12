@@ -3,6 +3,6 @@ Beta versions will be unstable and may brake your system overtime please DO NOT 
 
 # In testing
 1. SysActions - Clean up mess, uninstall system and more
-2. GUI - Grapgical user interface
-3. New startup screen - Brend new startup screen
-4. Programs - shows the list of installed beta programs
+2. New startup screen - Brend new startup screen
+3. Programs - shows the list of installed beta programs
+4. shell - opens shell

@@ -16,13 +16,21 @@ choice = read()
 
 -- Uninstall
 if choice == "1" then
-    for del_files in ipairs(files) do
-        if files:sub(-#file_type) == file_type then
-            fs.delete(del_files)
-            print("Deleted file: del files")
-        end
+    print("Uninstaller")
     
-    os.reboot()
+    print("Do you want to uninstall LandaWasOS?: ")
+    choice = read()
+
+    if choice = "y" then
+        shell.run("delete update.lua")
+        shell.run("delete startup.lua")
+        shell.run("delete commands.lua")
+        shell.run("delete programs.lua")
+        shell.run("delete shell.lua")
+        shell.run("delete install.lua")
+        shell.run("delete cůean.lua")
+    else
+        print("Uninstallation canceled")
     
 elseif choice == "2" then
     textutils.slowPrint("---------------------------------------------------")

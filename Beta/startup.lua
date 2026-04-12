@@ -6,7 +6,7 @@ local gray = colors.gray
 local lime = colors.lime
 
 -- System vars
-local version = "Build: 7"
+local version = "Build: 8"
 local autor = "By m0d2r"
 local line = "---------------------------------------------------"
 
@@ -45,22 +45,17 @@ term.setTextColor(white)
 
 -- Status
 term.write("Starting services")
-textutils.slowPrint("........")
-
+textutils.slowPrint(".........")
 term.write("Starting System")
 textutils.slowPrint(".......")
-
 term.write("Starting shell")
 textutils.slowPrint("......")
-
 term.write("Loading system information")
-textutils.slowPrint("...")
-
+textutils.slowPrint("..")
 term.write("Loading commands")
-textutils.slowPrint("...")
-
-term.write("Loading GUI")
 textutils.slowPrint("....")
+term.write("Loading GUI")
+textutils.slowPrint("......")
 
 -- Information
 term.setCursorPos(1,9)
@@ -69,47 +64,5 @@ sleep(1)
 
 -- program loop
 term.setCursorPos(1,8)
-while true do
-    -- User
-    term.setTextColor(green)
-    write("LandaWasOS")
-    term.setTextColor(white)
-    write(" > ")
-    
-    local input = read()
-    
-    -- Build in commands
-    if input == "exit" then
-        break
-    
-    --system info
-    elseif input == "fetch" then
-        write("OS: ")
-        term.setTextColor(green)
-        print("LandaWasOS (BETA)")
-        term.setTextColor(white)
-        write("OS Version: ")
-        term.setTextColor(green)
-        print(version)
-        print("autor", autor)
-        term.setTextColor(white)
-        sleep(1)
-        
-    -- reboot
-    elseif input == "reboot" then
-        term.setTextColor(orange)
-        print("Rebooting...")
-        sleep(1)
-        os.reboot()
-    
-    -- shutdown
-    elseif input == "shutdown" then
-        tern.setTextColor(orange)
-        print("Shutting down...")
-        sleep(1)
-        os.shutdown()
-    
-    else
-        shell.run(input)
-    end
-end
+
+shell.run("shell.lza")
