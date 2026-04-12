@@ -3,6 +3,8 @@ local type_install
 local choice
 local reboot
 local input_name
+local file_type = ".lua"
+local files = fs.list("/")
 
 -- Startup
 term.clear()
@@ -14,24 +16,13 @@ choice = read()
 
 -- Uninstall
 if choice == "1" then
-    print("Uninstalling packeges...")
-    shell.run("delete clearn.lua")
-    shell.run("delete commands.lua")
-    shell.run("delete startup.lua")
-    shell.run("delete update.lua")
-
-    -- Ask user about Beta uninstallation
-    print("Do you wanna uninstall Beta apps: Y/N")
-    type_install = read()
-
-    -- Beta uninstall
-    if type_install == "y" then
-        print("Uninstalling beta packeges...")
-        shell.run("delete startup.lua")
-        shell.run("delete programs.lua")
-        shell.run("delete SysActions.lua")
-        print("All Beta packeges has been uninstalled succesfuly")
-    end
+    for del_files in ipairs(files) do
+        if files:sub(-#file_type) == file_type then
+            fs.delete(del_files)
+            print("Deleted file: del files")
+        end
+    
+    os.reboot()
     
 elseif choice == "2" then
     textutils.slowPrint("---------------------------------------------------")
