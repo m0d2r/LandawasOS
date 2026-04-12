@@ -5,6 +5,7 @@ term.setCursorPos(1,1)
 local ans
 local reboot_re
 local type_install
+local ver = "V0.1.1"
 
 -- vars colors
 local green = colors.green
@@ -12,7 +13,7 @@ local white = colors.white
 local red = colors.red
 
 -- Update all
-print("Software updater V0.1")
+print("Software updater", ver)
 print("Do you want to update to the latest release:\nAvailable r/b")
 
 type_install = read()
@@ -66,6 +67,7 @@ if type_install == "b" then
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/startup.lua startup.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/SysActions.lua SysActions.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/programs.lua programs.lua")
+    shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/shell.lua shell.lua")
     term.setTextColor(green)
     print("All Beta Updates has been installed Sucesffuly")
     term.setTextColor(white)
