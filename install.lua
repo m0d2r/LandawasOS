@@ -30,9 +30,12 @@ if type_install == "r" then
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/commands.lua commands.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/clean.lua clean.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/update.lua update.lua")
+    
     os.setComputerLabel("Landawas Operating System")
+    
     term.clear()
     term.setCursorPos(1,1)
+    
     term.setTextColor(green)
     Print("LandaWasOS has been installed succesfuly")
     term.setTextColor(white)
@@ -55,7 +58,7 @@ if type_install == "b" then
     os.setComputerLabel("Landawas Operating System (BETA)")
 
     term.setTextColor(green)
-    Print("LandaWasOS has been installed succesfuly")
+    print("LandaWasOS has been installed succesfuly")
     term.setTextColor(white)
     sleep(1)
 else

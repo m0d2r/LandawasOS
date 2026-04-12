@@ -2,7 +2,7 @@
 local orange = colors.orange
 local white = colors.white
 local green = colors.green
-local version = "V0.7.4.0.1"
+local version = "V0.7.4.0.2"
 local autor = "By m0d2r"
 
 -- Beggining
@@ -48,7 +48,7 @@ term.setTextColor(white)
 print("Type programs for all programs")
 
 -- program loop
-term.setCursorPos(1,6)
+term.setCursorPos(1,11)
 while true do
 
     -- User

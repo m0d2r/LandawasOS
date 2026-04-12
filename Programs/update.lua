@@ -49,7 +49,7 @@ if type_install == "r" then
 end
 
 if type_install == "b" then
-    print("Updating System apps...")
+    print("Deleting old System apps...")
 
     -- Files delete
     shell.run("delete gui.lua")
@@ -59,8 +59,9 @@ if type_install == "b" then
     
     term.setTextColor(green)
     print("Old files has been deleted")
+    print("Downloading new System apps...")
     term.setTextColor(white)
-
+    
     -- Files download
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/startup.lua startup.lua")
     shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Beta/SysActions.lua SysActions.lua")
