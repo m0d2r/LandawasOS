@@ -6,7 +6,7 @@ local gray = colors.gray
 local lime = colors.lime
 
 -- System vars
-local version = "Build: 8"
+local version = "Build: 9"
 local autor = "By m0d2r"
 local line = "---------------------------------------------------"
 
@@ -64,5 +64,43 @@ sleep(1)
 
 -- program loop
 term.setCursorPos(1,8)
-
-shell.run("shell.lza")
+while true do
+    -- User
+    term.setTextColor(green)
+    write("LandaWasOS")
+    term.setTextColor(white)
+    write(" > ")
+    
+    local input = read()
+    
+    --system info
+    elseif input == "fetch" then
+        write("OS: ")
+        term.setTextColor(green)
+        print("LandaWasOS (BETA)")
+        term.setTextColor(white)
+        write("OS Version: ")
+        term.setTextColor(green)
+        print(version)
+        print("autor", autor)
+        term.setTextColor(white)
+        sleep(1)
+        
+    -- reboot
+    elseif input == "reboot" then
+        term.setTextColor(orange)
+        print("Rebooting...")
+        sleep(1)
+        os.reboot()
+    
+    -- shutdown
+    elseif input == "shutdown" then
+        tern.setTextColor(orange)
+        print("Shutting down...")
+        sleep(1)
+        os.shutdown()
+    
+    else
+        shell.run(input)
+    end
+end
