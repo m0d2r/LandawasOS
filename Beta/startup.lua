@@ -6,11 +6,11 @@ local gray = colors.gray
 local lime = colors.lime
 
 -- System vars
-local version = "Build: 9"
+local version = "Build: 10"
 local autor = "By m0d2r"
 local line = "---------------------------------------------------"
 
--- install update
+-- install update for update.lua
 print("Updating update.lua")
 shell.run("delete update.lua")
 shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs/update.lua update.lua")
@@ -30,7 +30,7 @@ print(version)
 print(autor)
 
 term.setTextColor(orange)
-term.setCursorPos(1,19)
+term.setCursorPos(1,18)
 print(line)
 sleep(2)
 term.clear()
@@ -38,7 +38,7 @@ term.clear()
 -- Text
 term.setCursorPos(1,1)
 print(line)
-term.setCursorPos(1,19)
+term.setCursorPos(1,18)
 print(line)
 term.setCursorPos(1,2)
 term.setTextColor(white)
@@ -58,12 +58,13 @@ term.write("Loading GUI")
 textutils.slowPrint("......")
 
 -- Information
-term.setCursorPos(1,9)
+term.clear()
+term.setCursorPos(1,1)
 print("You can use progrmas to show list of programs")
 sleep(1)
 
 -- program loop
-term.setCursorPos(1,8)
+term.setCursorPos(1,2)
 while true do
     -- User
     term.setTextColor(green)
@@ -74,7 +75,7 @@ while true do
     local input = read()
     
     --system info
-    elseif input == "fetch" then
+    if input == "fetch" then
         write("OS: ")
         term.setTextColor(green)
         print("LandaWasOS (BETA)")
@@ -85,21 +86,24 @@ while true do
         print("autor", autor)
         term.setTextColor(white)
         sleep(1)
-        
-    -- reboot
-    elseif input == "reboot" then
-        term.setTextColor(orange)
-        print("Rebooting...")
-        sleep(1)
-        os.reboot()
     
     -- shutdown
-    elseif input == "shutdown" then
-        tern.setTextColor(orange)
-        print("Shutting down...")
-        sleep(1)
-        os.shutdown()
-    
+    elseif input == "Power" then
+        print("Power options: \n1. r - reboot\n2. s - shutdown\n3. c - cancel")
+        local input = read()
+
+        if input == "r" then
+            print("rebooting...")
+            sleep(1)
+            os.reboot()
+
+        elseif input == "s" then 
+            print("Shutting down...")
+            sleep(1)
+            os.shutdown()
+
+        elseif input == "c" then
+        end
     else
         shell.run(input)
     end

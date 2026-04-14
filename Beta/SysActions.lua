@@ -3,8 +3,6 @@ local type_install
 local choice
 local reboot
 local input_name
-local file_type = ".lua"
-local files = fs.list("/")
 
 -- Startup
 term.clear()
@@ -46,6 +44,7 @@ elseif choice == "2" then
     shell.run("delete startupBeta.lua")
     shell.run("delete gui.lua")
     shell.run("delete programs.lua")
+    shell.run("delete shell.lua")
 
     print("System has been clearned.")
     textutils.slowPrint("---------------------------------------------------")

@@ -5,4 +5,6 @@ Beta versions will be unstable and may brake your system overtime please DO NOT 
 1. SysActions - Clean up mess, uninstall system and more
 2. New startup screen - Brend new startup screen
 3. Programs - shows the list of installed beta programs
-4. shell - opens shell
+
+# In testing Build-in
+1. Power - Opens a power menu
