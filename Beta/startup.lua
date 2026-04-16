@@ -6,7 +6,7 @@ local gray = colors.gray
 local lime = colors.lime
 
 -- System vars
-local version = "Build: 10"
+local version = "Version: 11"
 local autor = "By m0d2r"
 local line = "---------------------------------------------------"
 
@@ -51,7 +51,7 @@ textutils.slowPrint(".......")
 term.write("Starting shell")
 textutils.slowPrint("......")
 term.write("Loading system information")
-textutils.slowPrint("..")
+textutils.slowPrint("...")
 term.write("Loading commands")
 textutils.slowPrint("....")
 term.write("Loading GUI")
@@ -59,12 +59,13 @@ textutils.slowPrint("......")
 
 -- Information
 term.clear()
-term.setCursorPos(1,1)
+term.setCursorPos(1,16)
 print("You can use progrmas to show list of programs")
 sleep(1)
 
 -- program loop
-term.setCursorPos(1,2)
+term.setCursorPos(1,17)
+
 while true do
     -- User
     term.setTextColor(green)
@@ -78,31 +79,35 @@ while true do
     if input == "fetch" then
         write("OS: ")
         term.setTextColor(green)
-        print("LandaWasOS (BETA)")
+        print("LandaWasOS")
         term.setTextColor(white)
-        write("OS Version: ")
+        write(version)
         term.setTextColor(green)
-        print(version)
-        print("autor", autor)
+        print(autor)
         term.setTextColor(white)
         sleep(1)
     
-    -- shutdown
-    elseif input == "Power" then
+    -- Power options
+    elseif input == "power" then
         print("Power options: \n1. r - reboot\n2. s - shutdown\n3. c - cancel")
         local input = read()
 
+        -- reboot
         if input == "r" then
             print("rebooting...")
             sleep(1)
             os.reboot()
-
+        
+        -- shutdown
         elseif input == "s" then 
             print("Shutting down...")
             sleep(1)
             os.shutdown()
-
+            
         elseif input == "c" then
+        
+        else
+            print("Incorrect option!")
         end
     else
         shell.run(input)

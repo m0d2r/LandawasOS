@@ -4,11 +4,15 @@ local choice
 local reboot
 local input_name
 
+-- short
+local line = "---------------------------------------------------"
+
 -- Startup
 term.clear()
 term.setCursorPos(1,1)
 
 -- Ask
+print("Sys actions V0.1")
 print("1 = uninstall os\n2 = OS clear\n3. Rename system")
 choice = read()
 
@@ -25,30 +29,34 @@ if choice == "1" then
         shell.run("delete commands.lua")
         shell.run("delete programs.lua")
         shell.run("delete shell.lua")
-        shell.run("delete install.lua")
         shell.run("delete cůean.lua")
     else
         print("Uninstallation canceled")
     
 elseif choice == "2" then
-    textutils.slowPrint("---------------------------------------------------")
+    print(line)
+    print("Do you want to clean your system?: Y/N")
+    choice = read()
 
-    -- Release clear
-    print("Clearning Unused files from updates")
-    shell.run("delete UpdateBeta.lua")
-    shell.run("delete start.lua")
-    shell.run("delete AutoUpd.lua")
-    shell.run("delete install.lua")
-    shell.run("delete startupBeta.lua")
-    shell.run("delete uninstall.lua")
-    shell.run("delete startupBeta.lua")
-    shell.run("delete gui.lua")
-    shell.run("delete programs.lua")
-    shell.run("delete shell.lua")
+    -- clean
+    if choice == "y" then
+        print("Clearning Unused files from updates")
+        shell.run("delete UpdateBeta.lua")
+        shell.run("delete start.lua")
+        shell.run("delete AutoUpd.lua")
+        shell.run("delete install.lua")
+        shell.run("delete startupBeta.lua")
+        shell.run("delete uninstall.lua")
+        shell.run("delete startupBeta.lua")
+        shell.run("delete gui.lua")
+        shell.run("delete programs.lua")
+        shell.run("delete shell.lua")
 
-    print("System has been clearned.")
-    textutils.slowPrint("---------------------------------------------------")
-    end
+        print("System has been clearned.")
+        print(line)
+    else
+        print("Operation canceled")
+        print(line)
 
 elseif choice == "3" then
     print("Select your name:")
