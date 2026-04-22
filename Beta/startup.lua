@@ -6,7 +6,7 @@ local gray = colors.gray
 local lime = colors.lime
 
 -- System vars
-local version = "Version: 11"
+local version = "Build: 11"
 local autor = "By m0d2r"
 local line = "---------------------------------------------------"
 
@@ -18,7 +18,7 @@ shell.run("wget https://raw.githubusercontent.com/m0d2r/LandawasOS/main/Programs
 -- Start up
 term.setTextColor(orange)
 term.setBackgroundColor(gray)
-term.clear()
+term.clear()    
 
 -- Text
 term.setCursorPos(1,1)
@@ -45,7 +45,7 @@ term.setTextColor(white)
 
 -- Status
 term.write("Starting services")
-textutils.slowPrint(".........")
+textutils.slowPrint(".....")
 term.write("Starting System")
 textutils.slowPrint(".......")
 term.write("Starting shell")
@@ -53,7 +53,7 @@ textutils.slowPrint("......")
 term.write("Loading system information")
 textutils.slowPrint("...")
 term.write("Loading commands")
-textutils.slowPrint("....")
+textutils.slowPrint("....") 
 term.write("Loading GUI")
 textutils.slowPrint("......")
 
@@ -67,6 +67,7 @@ sleep(1)
 term.setCursorPos(1,17)
 
 while true do
+
     -- User
     term.setTextColor(green)
     write("LandaWasOS")
@@ -77,6 +78,7 @@ while true do
     
     --system info
     if input == "fetch" then
+
         write("OS: ")
         term.setTextColor(green)
         print("LandaWasOS")
@@ -89,6 +91,7 @@ while true do
     
     -- Power options
     elseif input == "power" then
+        
         print("Power options: \n1. r - reboot\n2. s - shutdown\n3. c - cancel")
         local input = read()
 
